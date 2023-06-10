@@ -7,7 +7,6 @@ auto main(int argc, char* argv[]) -> int
 {
     if (argc >= 3)
     {
-
         if (strcmp(argv[1], "-f") == 0)
         {
             vm_protect vm;

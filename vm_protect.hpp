@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "log_functions.h"
+#include "WProtect/PE/CPEFile.h"
 class vm_protect : public log_functions
 {
 public:
@@ -12,7 +13,7 @@ public:
     {
     }
 
-    void get_table_addr(CPESection& section, std::vector<long>& addr_table_entry, std::vector<long*>& addr_table_entry_point);
+    void get_table_addr(CPEFile& file, std::vector<long>& addr_table_entry, std::vector<long*>& addr_table_entry_point);
     void protect_code(const char* filename, std::map<long, long>& user_protect_address);
 private:
     //BuildCodeInfo build_info;

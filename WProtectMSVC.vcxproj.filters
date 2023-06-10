@@ -19,6 +19,9 @@
     <Filter Include="inc">
       <UniqueIdentifier>{19c3440d-d01b-43a2-953b-ab03e3fcc27e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WProtect\PE">
+      <UniqueIdentifier>{c416435a-fff9-4a66-8138-96c5069bc17e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +30,9 @@
     <ClCompile Include="vm_protect.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="WProtect\PE\CPEFile.cpp">
+      <Filter>WProtect\PE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\log_functions.h">
@@ -34,6 +40,15 @@
     </ClInclude>
     <ClInclude Include="vm_protect.hpp">
       <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\PEStruct.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="WProtect\PE\CPEFile.h">
+      <Filter>WProtect\PE</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\datatype.h">
+      <Filter>inc</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

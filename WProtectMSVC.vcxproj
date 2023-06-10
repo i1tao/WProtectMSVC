@@ -145,10 +145,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="vm_protect.cpp" />
+    <ClCompile Include="WProtect\PE\CPEFile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="inc\datatype.h" />
     <ClInclude Include="inc\log_functions.h" />
+    <ClInclude Include="inc\PEStruct.h" />
     <ClInclude Include="vm_protect.hpp" />
+    <ClInclude Include="WProtect\PE\CPEFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
